@@ -51,7 +51,7 @@ const SITE = {
     {
       name: "Paperback",
       detail: "Printed paperback, delivered to your door or nearest pickup point.",
-      prices: { ZAR: 299, USD: 18, GBP: 14, EUR: 16 },
+      prices: { ZAR: 190, USD: 18, GBP: 14, EUR: 16 },
       physical: true,
       available: true,
       amazonLink: "",
@@ -59,7 +59,7 @@ const SITE = {
     {
       name: "Signed Paperback",
       detail: "Signed by the author. Add a name for a personal message.",
-      prices: { ZAR: 349, USD: 21, GBP: 17, EUR: 19 },
+      prices: { ZAR: 250, USD: 21, GBP: 17, EUR: 19 },
       physical: true,
       available: true,
       amazonLink: "",   // keep "" — Amazon can't sign books!
@@ -67,7 +67,7 @@ const SITE = {
     {
       name: "eBook (EPUB)",
       detail: "EPUB file, emailed to you. Works on phones, tablets, Kobo and most e-readers.",
-      prices: { ZAR: 129, USD: 7, GBP: 6, EUR: 7 },
+      prices: { ZAR: 120, USD: 7, GBP: 6, EUR: 7 },
       physical: false,
       available: true,
       amazonLink: "",
