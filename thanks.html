@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you · Until I Come for You</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="images/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<main class="thanks">
+  <img data-cover src="images/cover.jpg" alt="Cover of Until I Come for You">
+  <p class="eyebrow">Payment received</p>
+  <h1>Thank you</h1>
+  <p>Your order for <em data-text="title">Until I Come for You</em> is in. A payment receipt is on its way to your inbox. If you bought the eBook, it will be emailed to you within 24 hours. If you bought a paperback, I’ll email you again when it’s on its way.</p>
+  <p>Jason kept his promise. I’ll keep mine.</p>
+  <p>— <span data-text="author">Gasan Sallies</span></p>
+  <a class="btn btn-ghost" href="index.html">Back to the book</a>
+</main>
+<script src="settings.js"></script>
+<script>
+  (function(){var S=typeof SITE!=="undefined"?SITE:{};
+  document.querySelectorAll("[data-text]").forEach(function(el){var v=S[el.getAttribute("data-text")];if(v)el.textContent=v;});
+  document.querySelectorAll("[data-cover]").forEach(function(i){if(S.coverImage)i.src=S.coverImage;});})();
+</script>
+</body>
+</html>

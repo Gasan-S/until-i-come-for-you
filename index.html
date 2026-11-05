@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Until I Come for You · Gasan Sallies</title>
+<meta name="description" content="Until I Come for You, a YA fantasy novel by Gasan Sallies. Book One of a trilogy. Order your copy direct from the author.">
+<meta property="og:title" content="Until I Come for You · Gasan Sallies">
+<meta property="og:description" content="He promised he'd always come back for her. Then he woke beneath three moons. Order direct from the author.">
+<meta property="og:image" content="images/cover.jpg">
+<meta property="og:type" content="book">
+<link rel="icon" href="images/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top" data-text="author">Gasan Sallies</a>
+  <nav>
+    <a href="#read">Read Chapter One</a>
+    <a href="#about">About</a>
+    <a class="nav-buy" href="#buy">Buy the book</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="cover-wrap">
+      <div class="moon-ring" aria-hidden="true"></div>
+      <img class="cover" data-cover src="images/cover.jpg" alt="Cover of Until I Come for You by Gasan Sallies">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow"><span data-text="genre"></span> · <span data-text="series"></span></p>
+      <h1 data-text="title">Until I Come for You</h1>
+      <p class="byline">by <span data-text="author"></span></p>
+      <div class="blurb" data-blurb></div>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#buy"><span data-text="status">Pre-order now</span> <span class="from" data-from></span></a>
+        <a class="btn btn-ghost" href="#read">Read Chapter One</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAISE (hidden if empty) -->
+  <section class="praise" data-praise hidden></section>
+
+  <!-- BUY -->
+  <section class="buy" id="buy">
+    <div class="section-head">
+      <p class="eyebrow">Order direct from the author</p>
+      <h2>Choose your copy</h2>
+      <p class="note" data-text="shippingNote"></p>
+    </div>
+
+    <div class="currency" data-currency role="radiogroup" aria-label="Currency"></div>
+
+    <div class="formats" data-formats role="radiogroup" aria-label="Book format"></div>
+
+    <form class="order" data-order novalidate>
+      <div class="amazon-box" data-amazon hidden>
+        <p>Outside South Africa, this edition is printed and shipped by Amazon, which is faster and cheaper for you.</p>
+        <a class="btn btn-gold" data-amazon-link href="#" target="_blank" rel="noopener">Buy on Amazon</a>
+      </div>
+
+      <div data-direct>
+      <div class="row">
+        <label class="field qty">Quantity
+          <input type="number" name="qty" min="1" max="20" value="1" inputmode="numeric">
+        </label>
+        <label class="field">Full name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label class="field">Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+      </div>
+
+      <div data-inscription hidden>
+        <label class="field">Who should the book be signed for? <small>(optional)</small>
+          <input type="text" name="inscription" maxlength="80" placeholder="e.g. For Amina">
+        </label>
+      </div>
+
+      <fieldset class="choices" data-delivery hidden>
+        <legend>Delivery</legend>
+        <div data-delivery-list></div>
+      </fieldset>
+
+      <div data-pickup hidden>
+        <div class="row">
+          <label class="field wide"><span data-pickup-label>Pickup point</span>
+            <input type="text" name="pickup">
+          </label>
+          <label class="field">Phone <small>(for the SMS / courier)</small>
+            <input type="tel" name="phone2" autocomplete="tel">
+          </label>
+        </div>
+      </div>
+
+      <div data-address hidden>
+        <div class="row">
+          <label class="field">Phone <small>(for the courier)</small>
+            <input type="tel" name="phone" autocomplete="tel">
+          </label>
+          <label class="field wide">Street address
+            <input type="text" name="street" autocomplete="street-address">
+          </label>
+        </div>
+        <div class="row">
+          <label class="field">Suburb
+            <input type="text" name="suburb">
+          </label>
+          <label class="field">City
+            <input type="text" name="city" autocomplete="address-level2">
+          </label>
+          <label class="field">Postal code
+            <input type="text" name="postal" autocomplete="postal-code" inputmode="numeric">
+          </label>
+        </div>
+      </div>
+      <p class="hint" data-intl-hint hidden>PayPal will ask for your delivery address at checkout.</p>
+
+      <div class="summary" data-summary></div>
+      <p class="error" data-error role="alert"></p>
+
+      <button class="btn btn-gold btn-pay" type="submit" data-pay>Continue to payment</button>
+      <p class="secure" data-secure></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- CHAPTER ONE -->
+  <section class="read" id="read">
+    <div class="section-head">
+      <p class="eyebrow">Free sample</p>
+      <h2>Chapter One</h2>
+      <p class="chapter-sub">The Awakening</p>
+    </div>
+    <article class="chapter" data-chapter>
+      <!-- CHAPTER-ONE-START -->
+<p class="epigraph"><em>You possess many gifts, my child. The secret is to unlock them. And in the darkness, follow the light drops wherever they may lead.</em></p>
+<p>My Ouma said that to me every Thursday until the Thursday she died. I never knew what it meant.</p>
+<p>I’m thinking about it now because I can’t see anything.</p>
+<p>I open my eyes and nothing changes. It’s black in every direction. No moon, no streetlight under a door. Something is pressed tight around my whole body, and when I try to move, it doesn’t give. I can’t even bend a finger.</p>
+<p>I try to scream. Nothing comes out.</p>
+<p><em>Think.</em> What’s the last thing I remember?</p>
+<p>Katy.</p>
+<p>My little sister. I remember holding her. I remember blood on my clothes, in my hair. Glass breaking somewhere close. After that, nothing.</p>
+<p>Was it her lungs again? Is she somewhere in this dark too?</p>
+<p>Katy is six, and when she can’t breathe she needs her pump and she needs me, in that order. I push against whatever’s holding me. It doesn’t move. I push until my head is pounding, and then I feel it.</p>
+<p>Cold, starting at my feet.</p>
+<p>I haven’t had that feeling in years. When I was little I used to get it at night, right before something I couldn’t explain walked into my bedroom. Ouma said it was a gift. I always thought it was more of a warning.</p>
+<p>Something is above me now. I can feel it the way you feel someone standing behind your chair. The ground shakes. Wind comes in from somewhere.</p>
+<p>“Fatheus.”</p>
+<p>Pain cracks down my back. A strip of grey light opens above my face. I’m inside something, some kind of cocoon, and someone’s tearing it open.</p>
+<p>A shape pours through the gap. Black smoke with a face in it.</p>
+<p>It grabs my throat.</p>
+<p>Its eyes are red. Its breath smells like a fire somebody put out with dirt.</p>
+<p>“Fatheus,” it says. “You have something that was never meant for you. I’ll have it back. Sooner than you think.”</p>
+<p>I want to tell it that it’s got the wrong person, that my name is Jason and I need to find my sister. Its fingers are closing and I can’t get any air.</p>
+<p>It pulls my face close and breathes into my mouth.</p>
+<p>Smoke goes down my throat before I can stop it, thick and warm, and my head goes fuzzy. Something in my blood turns over, making room.</p>
+<p><em>BANG.</em></p>
+<p>Light explodes beside us. The smoke-thing shrieks and blows apart. My body drops. Through the blur I see the smoke pull itself back together and go for someone I can’t see.</p>
+<p><em>BANG.</em></p>
+<p>Gone again.</p>
+<p>A second shape comes towards me. This one looks like a person. That’s all I get before the dark closes back over my eyes.</p>
+<p class="break">✦ ✦ ✦</p>
+<p>I know this afternoon. It happened three weeks ago, and I’m living it again, the way you do in dreams.</p>
+<p>It’s drizzling outside Katy’s school. She comes running at me in her yellow raincoat, the one that’s two sizes too big because Mom says she’ll grow into it. Her hand finds mine without looking.</p>
+<p>We walk. She stares up at me, grinning.</p>
+<p>“No,” I say.</p>
+<p>“I didn’t say anything.”</p>
+<p>“You’re going to ask about the park.”</p>
+<p>“I was going to ask about sharks,” she says. “Did you know a shark can smell one drop of blood in a whole swimming pool?”</p>
+<p>“I did not know that.”</p>
+<p>“Well, they can.” A few steps. “And the park.”</p>
+<p>The park is halfway home. I usually let her play for ten minutes before we go in. Not in the rain, though, and not with her chest. Mom would kill me, and then she’d kill me again for good measure.</p>
+<p>“It’s wet, Katy. Everything’s slippery.”</p>
+<p>“Ag, it’s drizzling. That’s not raining. That’s just air that’s trying.”</p>
+<p>“That doesn’t even make sense.”</p>
+<p>“Five minutes.” She stops at the gate and gives me the face. Big eyes, bottom lip. She learned it from a cat video and she has never once lost with it.</p>
+<p>“Five minutes,” I say. “And you stay off the high bars.”</p>
+<p>She’s gone before I finish, school bag dropped straight in a puddle. I pick it up and try to wipe the mud off with my sleeve, which only spreads it around.</p>
+<p>My phone buzzes. Mom.</p>
+<p>“Where are you?”</p>
+<p>“Almost home.”</p>
+<p>“What’s taking so long? Ag, Jason, it’s raining—”</p>
+<p>“Drizzling,” I say, and hang up before she can tell me what drizzling does to Katy’s lungs.</p>
+<p>When I look up, the jungle gym is empty.</p>
+<p>“Katy?”</p>
+<p>I find her behind the slide, bent over, hands on her knees. The sound she’s making isn’t breathing. It’s a whistle.</p>
+<p>I’m already unzipping her bag. I drop to my knees in the wet sand and put the pump to her mouth.</p>
+<p>“Breathe. Come on.”</p>
+<p>She pulls in the spray and grabs my jacket in both fists.</p>
+<p>“One more.”</p>
+<p>The second one opens her up. I can feel it through my hands on her back, the knot under her ribs letting go. I rub slow circles between her shoulder blades until she stops shaking.</p>
+<p>“You weren’t on the high bars,” I say.</p>
+<p>“I was holding my breath,” she says into my jacket. “Under the slide. I wanted to see if I could do a whole minute. For when I learn to swim.”</p>
+<p>I don’t say anything for a second, because if I do I’ll shout.</p>
+<p>“You can’t do that. Not with your chest. Never.”</p>
+<p>“Everybody else can.”</p>
+<p>“You’re not everybody else.”</p>
+<p>She pulls back and looks at me, and the look isn’t six years old at all.</p>
+<p>“I know,” she says. “That’s the problem.”</p>
+<p>I pick her up and carry her home, even though she’s too big for it and she tells me so the whole way.</p>
+<p class="break">✦ ✦ ✦</p>
+<p>“Katy!”</p>
+<p>I sit up gasping.</p>
+<p>Grass. I’m lying in grass, wet with something that isn’t quite dew. I’m naked. The sky is pale and there’s no sun in it, and the field goes on until it stops being a field and is just distance.</p>
+<p>The cocoon is gone. So is the smoke-thing.</p>
+<p>When I stand up, I see the cord.</p>
+<p>A black tube comes out of my belly button. It runs across the grass and goes into the ground a few metres away. I grab it and pull. It isn’t stuck on. It’s growing out of me.</p>
+<p>The ground shakes. The cord starts sliding into the earth, dragging me with it, and then it rips out of me.</p>
+<p>I slap my hand over my stomach. Under my palm, the skin closes. When I look, there’s nothing there at all.</p>
+<p>“Okay,” I say to nobody. “Okay. Sure.”</p>
+<p>There are clothes folded on the grass a few steps away. Black trousers and a black top, each with one red stripe down the right side, and plain black shoes with no laces. The fabric is cool and weirdly smooth. I put them on because I don’t have a better idea.</p>
+<p>“Fatheus.”</p>
+<p>I spin around.</p>
+<p>A girl is standing behind me. My age, maybe. Long black hair, really pale skin. She’s dressed like me.</p>
+<p>Her eyes are gold. Actually gold, lit from inside, like a flame behind glass.</p>
+<p>“My name’s Jason,” I say. “Where’s my sister?”</p>
+<p>“You need not worry,” she says. “Everything you want to know will reveal itself. You only need patience.”</p>
+<p>“I don’t have patience. I have a six-year-old with asthma who couldn’t breathe the last time I saw her.”</p>
+<p>The girl doesn’t answer. She walks past me.</p>
+<p>I grab her arm, and she flinches.</p>
+<p>There’s a hole burned in her sleeve. The skin underneath is black, the same black as the smoke. She’s the one who fought it off me.</p>
+<p>I let go.</p>
+<p>“Sorry,” I say. “Thank you. For back there.”</p>
+<p>Something moves across her face, too fast to read. She covers the burn with her hand and keeps walking, and I follow her, because the other choice is standing alone in a field that doesn’t end.</p>
+<p>“What was that thing?”</p>
+<p>“Something that eats light,” she says. “It shouldn’t have found you this fast.”</p>
+<p>“I don’t have any light.”</p>
+<p>She doesn’t answer that.</p>
+<p>“It kept calling me Fatheus. I’m not him.”</p>
+<p>She stops so suddenly I nearly walk into her. She turns, and her gold eyes are an inch from mine.</p>
+<p>“Do you have any idea,” she says quietly, “how much harder you’ve just made everything?”</p>
+<p>Then she looks away. I don’t think it’s me she’s angry at. Or not only me.</p>
+<p>“We have to go in,” she says. “We’re here.”</p>
+<p>“Here” is more grass.</p>
+<p>“Your eyes aren’t open yet,” she says. “Close them. Then open them properly. The way you did when you were small.”</p>
+<p>I don’t ask how she knows about when I was small. I close my eyes.</p>
+<p>I think about Katy, because that’s where my head always goes. Katy under the slide. Katy in her raincoat. Then the picture changes on its own. Katy running and crying my name. A long road at night. Katy on the tar. Me next to her, covered in blood.</p>
+<p>That isn’t my thought. It came from somewhere else, like a hand on the back of my head, pushing.</p>
+<p>I open my eyes, and a black leaf drifts down and lands in my palm.</p>
+<p>It’s shaped like a normal leaf, stem and veins and the little saw-teeth along the edge, except it’s black all the way through. The breeze lifts it off my hand and it comes apart into ash.</p>
+<p>“Better,” the girl says.</p>
+<p>I look up.</p>
+<p>There’s a tree. It wasn’t there a second ago. It’s so tall that clouds catch in its branches, and every leaf on it is black. The girl walks to its trunk and lays her right hand flat against it.</p>
+<p>The bark moves. Plates of it slide over each other and pull apart into a doorway. Black marble steps push up out of the ground beneath it, one at a time.</p>
+<p>She goes in. I go after her.</p>
+<p class="break">✦ ✦ ✦</p>
+<p>Inside, it’s dark until she lifts her hand.</p>
+<p>A speck of blue light sits in her palm. It floats up and bursts into a thousand pieces that drift off and settle into torches, one after another, down both sides of a black staircase so long I can’t see the bottom.</p>
+<p>We go down. At the bottom she presses her hand to a blank wall, and an archway opens in it, and we walk into a room so big it makes my chest feel small.</p>
+<p>It’s round. The floor is black marble with a red symbol cut into the middle: an upside-down half-moon, and inside it three circles, a white one and a black one side by side and a grey one above them, joined by thin red lines. A single chair stands in the centre.</p>
+<p>And the walls are books.</p>
+<p>I mean that. There aren’t walls with books on them. The shelves curve all the way round and climb until I lose them in the dark. Millions of books, maybe more. Every spine black, every spine stamped with the same red symbol.</p>
+<p>“Wait here,” the girl says. “Don’t touch anything.”</p>
+<p>She puts her hand on the far shelves, and a gap opens, and she goes through it, and it closes behind her.</p>
+<p>I last about ten seconds.</p>
+<p>I pull a book off the nearest shelf. Black cover, the symbol, nothing else. I open it, and dizziness hits me like I’ve stood up too fast.</p>
+<p>The first page is black. On the second, in silver letters, there’s a name.</p>
+<p>Emily Stone.</p>
+<p>Under it, a year. 1976. Next to it, where another year should be, there’s nothing. But it’s a weird kind of nothing, like a window with the curtain drawn. When I try to look at it straight, my eyes slide off.</p>
+<p>A name. The year she was born.</p>
+<p>And the other year, already there behind the curtain. Just not for me.</p>
+<p>I look up at the shelves going up forever.</p>
+<p>Somewhere in here there’s a book that says Katy Black.</p>
+<p>I put Emily Stone back and pull out the next one. Thabo Nkosi, 2011. The next. Aiko Tanaka, 1958. My head is pounding. Every book I open, the dizziness gets worse, like they’re taking something out of me in exchange. I go along the shelf anyway. Marcus. Linh. Pieter. Fatima. My nose is wet. I wipe it and my hand comes away red.</p>
+<p>Black, Black, Katy Black—</p>
+<p>A drop of blood falls on a page. Then another. When I blink, everything’s red, and I reach for the next book.</p>
+<p>“No!”</p>
+<p>I hit the floor on my back, hard, and the book skids away across the marble. The girl’s face is over mine. She’s holding my cheeks in both hands, her fingers white against my skin.</p>
+<p>“Fatheus. Look at me.”</p>
+<p>I can feel my body getting further away, like a balloon somebody’s let go of.</p>
+<p>“Jason,” she says. “Jason.”</p>
+<p>My name. Something in me holds on to it.</p>
+<p>“You were looking for her book,” she says.</p>
+<p>I want to say yes. My mouth won’t work.</p>
+<p>“Then you’ll have to stay alive to find out why you can’t,” she says.</p>
+<p>The last thing I see is gold.</p>
+      <!-- CHAPTER-ONE-END -->
+    </article>
+    <div class="chapter-fade" data-chapter-fade>
+      <button class="btn btn-ghost" type="button" data-keep-reading>Keep reading</button>
+    </div>
+    <div class="chapter-end" data-chapter-end hidden>
+      <p>Want to know what happens to Jason?</p>
+      <a class="btn btn-gold" href="#buy">Get the book</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow">The author</p>
+      <h2 data-text="author">Gasan Sallies</h2>
+    </div>
+    <p class="about-text" data-text="aboutAuthor"></p>
+    <div class="links" data-links></div>
+    <a class="btn btn-ghost" data-mailing href="#">Get updates on Book Two</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© <span data-year></span> <span data-text="author"></span>. All rights reserved.</p>
+  <p>Questions about an order? <a data-contact href="#">Email me</a></p>
+</footer>
+
+<script src="settings.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

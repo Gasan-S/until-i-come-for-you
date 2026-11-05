@@ -1,0 +1,78 @@
+YOUR BOOK WEBSITE: HOW TO EDIT IT
+=================================
+
+Everything you'll ever need to change is in ONE file: settings.js
+
+CHANGE A PRICE
+  1. On GitHub, open your website repository and click settings.js
+  2. Click the pencil icon (Edit)
+  3. Change the number, e.g.  priceZAR: 299,  ->  priceZAR: 279,
+  4. Click "Commit changes". The live site updates in about 1 minute.
+
+CHANGE THE COVER
+  Easiest way (same file name):
+  1. Save your new cover as  cover.jpg
+  2. On GitHub, open the "images" folder, then Add file > Upload files
+  3. Drag in cover.jpg, then click "Commit changes". It replaces the old one.
+  Different file name (e.g. cover-v2.png):
+  Upload it to "images", then in settings.js change
+     coverImage: "images/cover.jpg",  ->  coverImage: "images/cover-v2.png",
+  Tip: a refresh may show the old cover for a minute (browser cache).
+
+CURRENCIES
+  Buyers pick ZAR, USD, GBP or EUR at the top of the shop.
+  ZAR is paid via PayFast; USD/GBP/EUR via PayPal.
+  Each format has a price per currency:
+     prices: { ZAR: 299, USD: 18, GBP: 14, EUR: 16 },
+  To stop offering a currency, remove it from the  currencies:  line.
+
+LOCAL DELIVERY (South Africa)
+  Edit the  deliverySouthAfrica  list: each line is one option the buyer
+  can pick, with its price in Rand. Add, remove or re-price any line.
+
+SELLING ON AMAZON (KDP) AS WELL
+  When your paperback is live on Amazon, paste its link into
+     amazonLink: "",
+  for the Paperback. Overseas buyers are then sent to Amazon for it,
+  while South Africans still buy direct from you.
+  Leave the Signed Paperback's amazonLink empty.
+  WARNING: if you put the Kindle eBook in KDP Select / Kindle Unlimited,
+  Amazon does not allow you to sell the eBook anywhere else, including
+  this site. Then set the eBook to  available: false  here.
+
+EBOOK ORDERS
+  When an eBook payment comes in, email the buyer the EPUB file as an
+  attachment (the site promises within 24 hours).
+
+TURN ON PAYMENTS
+  South Africa (PayFast):
+    Paste your Merchant ID and Merchant Key into settings.js.
+    Leave payfastTestMode: true and do a test on sandbox first.
+    When happy, change it to  payfastTestMode: false,
+    IMPORTANT: leave the PayFast "passphrase" blank in your PayFast settings,
+    or payments will be refused.
+  USD / GBP / EUR (PayPal):
+    Put your PayPal business email in  paypalEmail: "",
+  Until payments are on, the button says "Reserve my copy by email" and
+  sends you an email with the buyer's order and address.
+
+WHERE TO FIND ORDERS
+  PayFast: each payment notification shows the buyer's name, email and
+  the custom fields: delivery method + address or pickup point (custom_str1), phone (custom_str2),
+  signing name (custom_str3) and what they bought (custom_str4).
+  ALWAYS check the amount paid in PayFast/PayPal matches the price
+  before you post a book.
+  PayPal: the delivery address is in the transaction details.
+
+GOLDEN RULES FOR EDITING settings.js
+  - Only change text inside "quotes" or the numbers.
+  - Keep the comma at the end of each line.
+  - Prices are plain numbers: 299 (not R299).
+  - If the site goes blank after an edit, a comma or quote is missing.
+    Open settings.js, click "History", and compare with the last version.
+
+OTHER FILES (no need to touch)
+  index.html  - the page itself (Chapter One text lives here)
+  style.css   - colours and layout
+  app.js      - the shop logic
+  thanks.html - the page buyers see after paying
